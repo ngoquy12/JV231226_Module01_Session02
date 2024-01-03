@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <!-- Tiêu đề của form -->
+      <h3>Đăng ký tài khoản</h3>
+      <!-- Phần thân của form - Các ô nhập liệu -->
+      <div>
+        <label for="userName">Họ và tên</label>
+        <input
+          name="userName"
+          id="userName"
+          placeholder="Nhập họ và tên đầy đủ"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="dateOfBirth">Ngày sinh</label>
+        <input name="dateOfBirth" id="dateOfBirth" type="date" />
+      </div>
+      <br />
+      <div>
+        <label for="male">Giới tính</label>
+        <input name="gender" value="nam" id="male" type="radio" />
+        <label for="male">Nam</label>
+        <input name="gender" value="nu" id="female" type="radio" />
+        <label for="female">Nữ</label>
+        <input value="khac" checked name="gender" id="other" type="radio" />
+        <label for="other">Khác</label>
+      </div>
+      <br />
+      <div>
+        <label for="phoneNumber">Số điện thoại</label>
+        <input name="phoneNumber" id="phoneNumber" type="tel" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Mật khẩu</label>
+        <input name="password" id="password" type="password" />
+      </div>
+      <br />
+      <div>
+        <label for="address">Địa chỉ</label> <br />
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="city">Thành phố</label> <br />
+        <select name="city" id="city">
+          <option value="">Hà Nội</option>
+          <option value="">Hà Nam</option>
+          <option value="">Ninh Bình</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="">Sở thích</label>
+        <input checked type="checkbox" /> <label for="">Đá bóng</label>
+        <input type="checkbox" /> <label for="">Cầu lông</label>
+        <input type="checkbox" /> <label for="">Nhảy dây</label>
+        <input type="checkbox" /> <label for="">Chơi game</label>
+      </div>
+      <!-- Dạng input với dữ liệu như: Chọn màu sắc, tiến độ, dạng thời gian tháng/năm, dạng submit, reset, button -->
+      <br />
+      <div>
+        <label for="">Màu da</label>
+        <input name="color" type="color" />
+      </div>
+      <br />
+      <div>
+        <label for="">Tiến độ hoàn thành công việc</label>
+        <input name="range" type="range" />
+      </div>
+      <br />
+      <div>
+        <label for="">Hình ảnh</label>
+        <input type="file" />
+      </div>
+      <br />
+      <!-- Chân của form -->
+      <input type="submit" value="Đăng ký" />
+      <input type="button" value="Hủy" />
+      <input type="reset" value="Làm mới" />
+    </form>
+  </body>
+</html>
